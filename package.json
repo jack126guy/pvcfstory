@@ -5,7 +5,7 @@
 	"exports": {
 		".": "./index.ts"
 	},
-	"files": ["src", "index.ts"],
+	"files": ["src/components", "index.ts"],
 	"keywords": ["astro-component"],
 	"scripts": {},
 	"devDependencies": {
