@@ -1,3 +1,80 @@
-<div class="pvcfstory">TODO</div>
+---
+import scriptSrc from './PvcfStoryReader.cljs';
+---
 
-<script src="./PvcfStoryReader.js"></script>
+<noscript>
+	<p class="notice error">JavaScript is required to use this tool</p>
+</noscript>
+<div id="pvcfstory">
+	<form action="#">
+		<div>
+			<label
+				>Your Name (optional, used for some stories): <input
+					type="text"
+					class="reader-name"
+				/></label
+			>
+		</div>
+		<div class="code-form">
+			<label>Story Code: <input type="text" class="code" /></label>
+			<button type="submit" class="code-get">Get</button>
+		</div>
+	</form>
+	<div class="result">
+		<h2 class="title">Unknown Story</h2>
+		<p>Written by <span class="author">Unknown Author</span></p>
+		<p class="text"></p>
+		<hr />
+		<p><strong class="question"></strong></p>
+		<div class="choices"></div>
+	</div>
+	<p class="notice loading">Loading, please wait...</p>
+	<p class="notice error">Could not load story</p>
+</div>
+
+<script is:inline src={scriptSrc}></script>
+
+<style>
+	.notice {
+		padding: 0.75em;
+		color: #000000;
+	}
+	.notice.loading {
+		background-color: #ffff88;
+	}
+	.notice.error {
+		background-color: #ff8888;
+	}
+	#pvcfstory,
+	#pvcfstory .result,
+	#pvcfstory .notice {
+		display: none;
+	}
+	#pvcfstory .code-form {
+		font-size: 1.5em;
+		line-height: 2;
+		margin: 0.75em 0em;
+	}
+	#pvcfstory .code-form input,
+	#pvcfstory .code-form button {
+		font-size: 100%;
+		max-width: 100%;
+	}
+	#pvcfstory .text,
+	#pvcfstory :global(.ending) {
+		white-space: pre-line;
+	}
+	#pvcfstory :global(.option) {
+		padding: 0.75em;
+		margin: 0.375em 0em;
+		border: none;
+		width: 100%;
+		font-size: 100%;
+		text-align: left;
+		background-color: #ff6600;
+		color: #000000;
+	}
+	#pvcfstory :global(.option):hover {
+		background-color: #ff9944;
+	}
+</style>
