@@ -1,11 +1,17 @@
 ---
 import scriptSrc from './PvcfStoryReader.cljs';
+
+interface Props {
+	apiBase: string;
+}
+
+const { apiBase } = Astro.props;
 ---
 
 <noscript>
 	<p class="notice error">JavaScript is required to use this tool</p>
 </noscript>
-<div id="pvcfstory">
+<div id="pvcfstory" data-api-base={apiBase}>
 	<form action="#">
 		<div>
 			<label

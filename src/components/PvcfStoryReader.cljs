@@ -1,6 +1,6 @@
 (function (createElement, appRoot, window, XMLHttpRequest, JSONparse, encodeURIComponent, decodeURIComponent) {
 	'use strict';
-	var apiBase = '/pvcfstory/api';
+	var apiBase = appRoot.getAttribute('data-api-base');
 
 	function loadStory(code) {
 		if (!code) {
