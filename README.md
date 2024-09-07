@@ -2,7 +2,7 @@
 
 [Live version](https://www.jackgraysonfox.xyz/pvcfstory/)
 
-The PVCF Story Reader is an unofficial tool for reading stories from the [interactive storytelling adventure at Ponyville Ciderfest 2023](https://ponyvilleciderfest.com/2023-storytelling-adventure-alternate-histories/), packaged as an [Astro](https://astro.build/) component.
+The PVCF Story Reader is an unofficial tool for reading stories from the [interactive storytelling adventure at Ponyville Ciderfest 2023](https://ponyvilleciderfest.com/2023/2023-storytelling-adventure-alternate-histories/), packaged as an [Astro](https://astro.build/) component.
 
 ## Requirements
 
