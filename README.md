@@ -24,7 +24,7 @@ The `apiBase` prop is the base path for the API that provides the story informat
 
 ## API
 
-The API provides story information based on a codeword. This API is a subset of that used by the official Ponyville Ciderfest mobile app.
+The component loads story information from an external API based on a codeword. This API is a subset of that used by the official Ponyville Ciderfest mobile app.
 
 There are two endpoints:
 
