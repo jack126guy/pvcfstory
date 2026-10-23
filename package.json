@@ -13,15 +13,15 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.9.9",
-		"@halfgray/vite-plugin-classic-js": "^1.2.2",
-		"astro": "^5.18.2",
-		"prettier": "^3.3.2",
-		"prettier-plugin-astro": "^0.14.0",
-		"typescript": "^5.5.2"
+		"@astrojs/check": "^0.9.12",
+		"@halfgray/astro-plugin-classic-js": "^1.0.0",
+		"astro": "^7.4.2",
+		"prettier": "^3.9.10",
+		"prettier-plugin-astro": "^1.1.1",
+		"typescript": "^6.0.3"
 	},
 	"peerDependencies": {
-		"@halfgray/vite-plugin-classic-js": "^1",
-		"astro": "^4 || ^5"
+		"@halfgray/astro-plugin-classic-js": "^1",
+		"astro": ">=6"
 	}
 }
