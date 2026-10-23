@@ -6,8 +6,8 @@ The PVCF Story Reader is an unofficial tool for reading stories from the [intera
 
 ## Requirements
 
-* Astro 4
-* [vite-plugin-classic-js](https://github.com/jack126guy/vite-plugin-classic-js) (for loading the client-side script)
+* Astro 6 or later
+* [astro-plugin-classic-js](https://github.com/jack126guy/astro-plugin-classic-js) (for loading the client-side script)
 
 ## Usage
 
